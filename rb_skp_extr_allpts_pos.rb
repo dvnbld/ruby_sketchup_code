@@ -1,6 +1,11 @@
 SKETCHUP_CONSOLE.clear
 starting = Process.clock_gettime(Process::CLOCK_MONOTONIC)
 
+def time_calc(starting)
+    ending = Process.clock_gettime(Process::CLOCK_MONOTONIC)
+    elapsed = ending - starting
+    puts format("Elapsed: %0.3f",elapsed)
+end
 
 def find_vertices(somedata)
     arr = []
@@ -21,9 +26,7 @@ skpents.each do |somedata|
     arr << find_vertices(somedata).flatten
 end
 arr = arr.flatten
-# p arr
 arr.each {|e| p e}
-p arr.count
-ending = Process.clock_gettime(Process::CLOCK_MONOTONIC)
-elapsed = ending - starting
-puts format("Elapsed: %0.3f",elapsed)
+puts format("Points: %i", arr.count)
+
+time_calc(starting)
