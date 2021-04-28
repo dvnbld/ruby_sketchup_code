@@ -13,11 +13,11 @@ UI.menu("Plugins").add_item("Reload My Script"){ load("dev_ruby_sketchup/test.rb
 ```
 ## List of scripts:
 - extract points position from sketchup model [rb_skp_extr_allpts_pos.rb](rb_skp_extr_allpts_pos.rb)
-- count connected entities(incl. components and groups) recursively [rb_skp_count_entities](rb_skp_count_entities.rb)
+- count connected entities(incl. components and groups) recursively [rb_skp_count_entities.rb](rb_skp_count_entities.rb)
 
 
 ## Performance
 Test scene - [Emirates-Stadium 3d model](https://3dwarehouse.sketchup.com/model/d3366f5a29c0868bc275347e4b192d7c/)
 
-rb_skp_count_entities.rb: 1249.713s
-rb_skp_extr_allpts_pos.rb: 12.136s
+- rb_skp_count_entities.rb: 1249.713s
+- rb_skp_extr_allpts_pos.rb: 12.136s
